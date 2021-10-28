@@ -1,0 +1,82 @@
+/* Star Selector (Selects every element in the HTML file) */
+* {
+    /* Includes padding, border whilst setting width and height for the element */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #113850;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    /* Center Div id "Container": Vertically/Horizontally Within Page*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* Setting the height to 100vh so the div will be centered vertically in the browser window (AKA Viewport) */
+  height: 100vh;
+  /* Adding padding the to body element so the div container is not up against the edge of the viewport on smaller screen sizes */
+  padding: 25px
+}
+
+h2{
+    /* Password Generator | Top, L/R, Bottom*/
+    margin: 10px,0,20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn{
+background-color: silver;
+/* Removes the default button border  */
+border: none;
+/* Button do NOT inherit text color. Must apply a new text color directly to the element */
+  color:black;
+/* Changes cursor when hovering over a button */
+cursor:pointer;
+padding: 8px, 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+
+
+#container {
+    background-color: teal;
+    padding: 15px;
+    width: 350px;
+  }
+
+
+#result-container {
+  background-color: #0a4952;
+  height: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  /* Top Right Bottom Left */
+ padding: 10px 5px 10px 10px;
+ /* Flexbox used to position the span and button elements */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#clipboard {
+  font-size: 20px;
+}
+
+#generate {
+  font-size: 16px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* Changes font size of generated password for smaller screen sizes */
+
+@media (max-width: 400px){
+  #result-container{
+    font-size: 14px;
+  }
+}
